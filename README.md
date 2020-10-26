@@ -1,4 +1,4 @@
-# AiderAuth
+# GeoDensity
 ![Grasp Logo](https://img.shields.io/static/v1?label=Grasp&message=we%20lmade%20this&color=green)
 
 Startup project for exploring GeoDensity using Docker (compose), django & real data
