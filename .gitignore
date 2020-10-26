@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# project spesific
+/src/geodensity/test_data/*
+
+# exception to the rule
+!/src/geodensity/test_data/.gitkeep

@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  db:
+    env_file:
+      - .env
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+  web:
+    env_file:
+    - .env
+    hostname: web
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8000:8000"
+    command: /start.sh
+    volumes:
+      - .:/code
+    depends_on:
+      - db
